@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+      <div class="calculadora">
+        <div class="title">
+          <div class="toggle">
+            <h3>calc</h3>
+            <div class="right">
+              <p id="one">1</p>
+              <p id="two">2</p>
+              <p id="three">3</p>
+            </div>
+          </div>
+        <div class="control">
+          <p>THEME</p>
+          <div class="box">
+            <div id="circle"></div>
+          </div>
+        </div>
+      </div>
+      <h2 id="resultado"></h2>
+
+      <div class="cal-body">
+
+          <table class="fundo-button">
+            <tr>
+              <td><button onclick="insert('7')">7</button></td>
+              <td><button onclick="insert('8')">8</button></td>
+              <td><button onclick="insert('9')">9</button></td>
+              <td><button class="del" onclick="back()">DEL</button></td>
+            </tr>
+
+            <tr>
+              <td><button onclick="insert('4')">4</button></td>
+              <td><button onclick="insert('5')">5</button></td>
+              <td><button onclick="insert('6')">6</button></td>
+              <td><button onclick="insert('+')">+</button></td>
+            </tr>
+
+            <tr>
+              <td><button onclick="insert('1')">1</button></td>
+              <td><button onclick="insert('2')">2</button></td>
+              <td><button onclick="insert('3')">3</button></td>
+              <td><button onclick="insert('-')">-</button></td>
+            </tr>
+
+            <tr>
+              <td><button onclick="insert(',')">.</button></td>
+              <td><button onclick="insert('0')">0</button></td>
+              <td><button onclick="insert('/')">/</button></td>
+              <td><button onclick="insert('*')">x</button></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <button class="reset" onclick="clean()">RESET</button>
+              </td>
+
+              <td colspan="2">
+                <button class="igual" onclick="calcular()">=</button>
+              </td>
+            </tr>
+          </table>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
